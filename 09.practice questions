@@ -1,0 +1,106 @@
+Program 1: Simulating a File Download with Callbacks
+=====================================================
+Aim: To practice using callbacks to handle asynchronous file download 
+                                          simulation.
+Task Description:
+====================
+=>Create a function that simulates downloading a file 
+                     (use setTimeout to mimic a delay of 3 seconds).
+=>Pass a callback function that executes after the download completes, 
+      displaying the file name and size (e.g., "file.txt", 5MB).
+=>Write a second callback to log a message confirming the file was saved
+                          to a folder.
+=>Test the program by calling the download function with different file 
+                        names and sizes.
+Challenge: Add error handling if the file size is negative or invalid.
+
+
+Program 2: Fetching Student Data with Promises
+===============================================
+Aim: To practice creating and resolving Promises for fetching student 
+                                                                 data.
+Task Description:
+=================
+=>Write a function that returns a Promise to fetch student 
+            data (e.g., roll number and name) after a 2-second delay.
+=>If the roll number is valid (e.g., positive), resolve the Promise
+  with the student object; otherwise, reject it with an error message.
+=>Consume the Promise using .then() to display the student data 
+                       and .catch() to handle errors.
+=>Test with both valid and invalid roll numbers.
+
+Challenge: Chain another Promise to fetch the student’s grades based 
+on the roll number.
+
+
+Program 3: Sequential API Calls with Promise Chaining
+=======================================================
+Aim: To practice chaining Promises to perform sequential asynchronous
+                                                        operations.
+Task Description:
+===============
+
+=>Create two functions: one that returns a Promise to fetch a user’s
+ profile (e.g., user ID and name) and another to fetch their course 
+ list based on the user ID.
+=>Use setTimeout to simulate API delays (e.g., 1 second for profile, 
+                      2 seconds for courses).
+=>Chain the Promises to first fetch the profile and then the 
+           course list, displaying both results.
+=>Include error handling for cases where the user ID is invalid.
+
+Challenge: Add a third Promise to fetch course details 
+           (e.g., course name and credits) for one of the courses.
+
+
+Program 4: Fetching Library Books with Async/Await
+==================================================
+Aim: To practice using async/await for cleaner asynchronous code.
+Task Description:
+
+=>Write a function that returns a Promise to fetch book details
+ (e.g., book ID, title, and availability) after a 1-second delay.
+=>Create an async function that uses await to fetch details of a 
+           single book and display its title and availability status.
+=>Use a try/catch block to handle errors if the book ID is invalid.
+=>Test with multiple book IDs, including one that fails.
+
+Challenge: Modify the function to fetch details of two books 
+sequentially and display both results.
+
+
+Program 5: Parallel Data Fetching with Promise.all
+===================================================
+Aim: To practice using Promise.all to handle multiple Promises 
+              concurrently.
+Task Description:
+=================
+=>Create a function that returns a Promise to fetch product 
+details (e.g., product ID and name) after a random delay (1-3 seconds).
+=>Write an async function that uses Promise.all to fetch details of 
+ three products concurrently.
+=>Display the results as a list of product names.
+=>Include error handling to catch cases where any product ID is invalid.
+
+Challenge: Add a condition where one Promise intentionally rejects to 
+test error handling.
+
+
+Program 6: Simulating a Login System with Async/Await
+======================================================
+Aim: To practice error handling in asynchronous operations using
+                                                         async/await.
+Task Description:
+=================
+=>Create a function that returns a Promise to simulate user 
+    login (e.g., check username and password) with a 1-second delay.
+=>Resolve the Promise with a success message if credentials are
+  valid (e.g., username: "student", password: "pass123"); otherwise,
+   reject with an error.
+=>Write an async function that uses await to call the login function 
+                and display the result.
+=>Use try/catch to handle login failures.
+=>Test with both valid and invalid credentials.
+Challenge: Add a second Promise to fetch user preferences after 
+              a successful login.
+

@@ -1,0 +1,44 @@
+Part A — Callbacks
+=================
+Task 1:
+ Write a program that:
+   Simulates downloading a file (takes 2 seconds).
+   After download completes, display "File downloaded" using a 
+   callback function.
+
+Task 2:
+Write a program that:
+   Has a function to boil water (takes 3 seconds).
+   Once water is boiled, call another function to make tea 
+   using a callback.
+
+Part B — Promises
+===================
+Task 3:
+Write a program that:
+   Simulates checking exam results.
+   If the result is passed, resolve the promise with "You passed!".
+   If failed, reject the promise with "You failed, try again.".
+
+Task 4:
+Write a program that:
+   Simulates booking a train ticket.
+   Use .then() and .catch() to handle promise result:
+       Resolve: "Ticket booked successfully"
+       Reject: "Ticket booking failed"
+
+ Part C — Async & Await
+==========================
+Task 5:
+Write a program that:
+   Uses async and await to simulate ordering pizza.
+   It should:
+      Wait 2 seconds to prepare pizza.
+      Print "Pizza ready!"
+      Then print "Delivering pizza".
+
+Task 6:
+Write a program that:
+    Defines a function getData() that returns a promise 
+    resolving with "Data received" after 1 second.
+    Use an async function to call getData() and log the result.
